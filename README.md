@@ -1,6 +1,8 @@
 # URIPath
 -------------------------------------
 
+A library that enumerates the various parts of a URI.  
+
 ```
                         Full path                          
                             |                              
@@ -110,8 +112,8 @@ The quag includes `?` and `#`.
 
 
 # See also:
-[FileVer][FileVer]
-[URLFormJS](https://github.com/Cyphrme/URLFormJS)
+- [FileVer][FileVer]
+- [URLFormJS](https://github.com/Cyphrme/URLFormJS)
 
 
 
