@@ -3,6 +3,8 @@
 
 Path is a library that enumerates path parts, including files and URI's.  
 
+
+# URI's
 ```
                         Full path                          
                             |                              
@@ -40,7 +42,7 @@ Naming for URI Paths
 | Anchor               | nose                        |
 | FragmentQuery        | ?name=bob                   |
 
-Additionally, the normal path information will be populated. 
+Additionally, the file path information will be populated. 
 | Name                 | Example                              |
 | -------------------- | ------------------------------------ |
 | Directory (dir)      | https://cyphr.me:8081/bob/           |
@@ -50,9 +52,38 @@ Additionally, the normal path information will be populated.
 | Extension base       | .txt                                 |
 
 
+# File Path
 
+```
+        Full path                          
+            |                              
+/‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\
+/aaaaa/eeeee/app.min.js
+\___________/\________/
+       |         |     
+  directory     file   
+             \__/\___/
+              |     | 
+           base    ext
+                    \__/
+                      | 
+									ext_base
+```
 
-# Query Parameters, Fragment Anchors, and Fragment Query Parameters
+File path parts
+| Name                 | Example                              |
+| -------------------- | ------------------------------------ |
+| Full path            | /aaaaa/eeeee/app.min.js              |
+| Directory (dir)      | /aaaaa/eeeee/                        |
+| File (filename)      | app.min.js                           |
+| FileBase             | app                                  |
+| Extension (ext)      | .min.js                              |
+| Ext Base (ext_base)  | .js                
+
+If the starting slash is not included in input, it is not included in
+output.  This also applies to relative references.  
+
+## Query Parameters, Fragment Anchors, and Fragment Query Parameters
 URIPath supports normal URL **query** parameters.  It also supports **fragment
 query** parameters.  Unlike query parameters, fragments are not sent to the
 server from the browser, which makes fragments **ideal for sensitive
@@ -95,7 +126,7 @@ queries, although this is browser dependent.  Fragment query parameters are
 through an RFC or other means.  
 
 
-# Quag
+## Quag
 
 We found it useful to name a super set of query and fragment, dubbed `quag`.
 The quag includes `?` and `#`.

@@ -14,6 +14,7 @@ func ExamplePopulated_file() {
 		"app.min.js",
 		"e/app.min.js",
 		"/a/e/app.min.js",
+		"../a/e/app.min.js",
 	}
 
 	for _, v := range paths {
@@ -64,6 +65,14 @@ func ExamplePopulated_file() {
 	// {
 	//     "full": "/a/e/app.min.js",
 	//     "dir": "/a/e/",
+	//     "file": "app.min.js",
+	//     "file_base": "app",
+	//     "ext": ".min.js",
+	//     "ext_base": ".js"
+	// }
+	// {
+	//     "full": "../a/e/app.min.js",
+	//     "dir": "../a/e/",
 	//     "file": "app.min.js",
 	//     "file_base": "app",
 	//     "ext": ".min.js",
