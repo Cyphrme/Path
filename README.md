@@ -1,7 +1,7 @@
-# URIPath
+# Path
 -------------------------------------
 
-A library that enumerates the various parts of a URI.  
+Path is a library that enumerates path parts, including files and URI's.  
 
 ```
                         Full path                          
