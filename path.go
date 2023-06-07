@@ -1,4 +1,4 @@
-package filever
+package path
 
 import (
 	"fmt"

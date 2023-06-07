@@ -1,4 +1,4 @@
-package filever
+package path
 
 import (
 	"fmt"
@@ -151,6 +151,7 @@ func ExamplePopulated_uri() {
 func ExamplePathCut() {
 	paths := []string{
 		"app",
+		"..subdir/test_5~fv=wwjNHrIw.js",
 		"sftp://example.com/joe/bob/file.txt",
 		"https://cyphr.me/coze",
 		"https://cyphr.me/assets/img/cyphrme_long.png",
@@ -165,6 +166,7 @@ func ExamplePathCut() {
 
 	// Output:
 	// dir:  file: app
+	// dir: ..subdir/ file: test_5~fv=wwjNHrIw.js
 	// dir: sftp://example.com/joe/bob/ file: file.txt
 	// dir: https://cyphr.me/ file: coze
 	// dir: https://cyphr.me/assets/img/ file: cyphrme_long.png
