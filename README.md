@@ -83,7 +83,7 @@ File path parts
 If the starting slash is not included in input, it is not included in
 output.  This also applies to relative references.  
 
-## Query Parameters, Fragment Anchors, and Fragment Query Parameters
+# Query Parameters, Fragment Anchors, and Fragment Query Parameters
 URIPath supports normal URL **query** parameters.  It also supports **fragment
 query** parameters.  Unlike query parameters, fragments are not sent to the
 server from the browser, which makes fragments **ideal for sensitive
@@ -140,8 +140,6 @@ The quag includes `?` and `#`.
                                                  quag
 
 
-
-
 # See also:
 - [FileVer][FileVer]
 - [URLFormJS](https://github.com/Cyphrme/URLFormJS)
@@ -150,7 +148,7 @@ The quag includes `?` and `#`.
 
 ----------------------------------------------------------------------
 # Attribution, Trademark notice, and License
-URIPath is released under The 3-Clause BSD License. 
+Path is released under The 3-Clause BSD License. 
 
 "Cyphr.me" is a trademark of Cypherpunk, LLC. The Cyphr.me logo is all rights
 reserved Cypherpunk, LLC and may not be used without permission.
