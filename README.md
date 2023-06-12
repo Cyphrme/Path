@@ -55,19 +55,19 @@ Additionally, the file path information will be populated.
 # File Path
 
 ```
-        Full path                          
-            |                              
-/‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\
-/aaaaa/eeeee/app.min.js
-\___________/\________/
-       |         |     
-  directory     file   
-             \__/\___/
-              |     | 
-           base    ext
-                    \__/
-                      | 
-									ext_base
+        Full path          
+            |              
+/‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\     
+/aaaaa/eeeee/app.min.js    
+\___________/\________/    
+       |         |         
+  directory     file       
+             \__/\___/    
+              |     |     
+           base    ext    
+                    \__/  
+                      |   
+                  ext_base
 ```
 
 File path parts
